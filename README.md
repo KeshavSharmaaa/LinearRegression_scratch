@@ -1,84 +1,125 @@
 # Linear Regression from Scratch
 
-A complete implementation of **Linear Regression from Scratch** using **Python** and **NumPy**, without relying on machine learning libraries such as Scikit-learn for the model implementation.
+A complete implementation of **Linear Regression from Scratch** using **Python** and **NumPy**, without using machine learning libraries such as Scikit-learn for the model itself.
 
-## Project Overview
+The project demonstrates how Linear Regression learns from data using **Gradient Descent**, from preprocessing to prediction and evaluation.
 
-This project demonstrates how Linear Regression works internally by implementing the algorithm from first principles. It covers the complete machine learning pipeline, including data preprocessing, model training using Gradient Descent, prediction, and evaluation.
+---
 
 ## Features
 
 - Linear Regression implemented from scratch
 - Gradient Descent optimization
-- Cost (MSE) calculation
+- Feature Standardization
+- Mean Squared Error (MSE) loss function
 - Model training and prediction
-- Data preprocessing
-- Performance evaluation using common regression metrics
-- Visualization of training results
+- Performance evaluation
+- Interactive data visualization using Plotly
+- Model serialization using Pickle
+
+---
 
 ## Tech Stack
 
 - Python
 - NumPy
 - Pandas
-- Matplotlib
+- Plotly
+- Pickle
 - Jupyter Notebook
+
+---
 
 ## Project Structure
 
 ```
-LinearRegression_scratch/
-│── LinearRegression_Scratch.ipynb
-│── dataset.csv
+LinearRegression_Scratch/
+│── linear-regression-from-scratch.ipynb
+│── train.csv
+│── test.csv
 │── README.md
 ```
 
-## Dataset
-
-The project uses a regression dataset to train and evaluate the Linear Regression model.
+---
 
 ## Workflow
 
-1. Load dataset
-2. Data preprocessing
-3. Initialize model parameters
-4. Train using Gradient Descent
-5. Update weights and bias iteratively
-6. Make predictions
-7. Evaluate model performance
-8. Visualize results
+1. Load the training and testing datasets
+2. Explore and visualize the data
+3. Standardize the input features
+4. Implement Linear Regression from scratch
+5. Train the model using Gradient Descent
+6. Generate predictions
+7. Evaluate performance using Mean Squared Error
+8. Save the trained model
 
-## Evaluation Metrics
+---
 
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
+## Mathematical Concepts
+
+This project implements the core mathematics behind Linear Regression, including:
+
+- Linear Regression
+- Gradient Descent
+- Cost Function (Mean Squared Error)
+- Weight and Bias Optimization
+- Feature Standardization
+
+---
 
 ## Results
 
-The implementation successfully learns the relationship between input features and target values using Gradient Descent, achieving competitive regression performance without using built-in machine learning models.
+The implementation successfully learns the relationship between input features and target values using Gradient Descent without relying on Scikit-learn's LinearRegression implementation.
+
+---
 
 ## Future Improvements
 
 - Mini-Batch Gradient Descent
 - Stochastic Gradient Descent (SGD)
 - L1 & L2 Regularization
+- Multiple Linear Regression
 - Polynomial Regression
-- Feature Scaling options
-- Multiple Linear Regression support
+- Performance comparison with Scikit-learn
 
-## Learning Objectives
+---
 
-This project was built to gain a deeper understanding of:
+## How to Run
+
+1. Clone the repository.
+
+```bash
+git clone <repository-url>
+```
+
+2. Install the required libraries.
+
+```bash
+pip install numpy pandas plotly
+```
+
+3. Open the notebook.
+
+```bash
+jupyter notebook linear-regression-from-scratch.ipynb
+```
+
+4. Run all cells.
+
+---
+
+## Learning Outcomes
+
+This project provides a practical understanding of:
 
 - How Linear Regression works internally
 - Gradient Descent optimization
-- Loss minimization
-- Parameter optimization
+- Model training from first principles
 - Machine Learning fundamentals
+- Regression model evaluation
 
-## Author
+---
 
-**Keshav Sharma**
+## License
 
-B.Tech CSE (AI & ML) | Machine Learning | Deep Learning | Computer Vision | AWS
+This project is open-source and intended for educational purposes.
